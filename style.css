@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #79a7a8;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff8984;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 10rem;
+  margin: 10px;
+  border-radius: 2rem;
+}
+
+.title {
+  margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 0.3rem solid gray;
+  display: inline-flex;
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exchange {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.amount input,
+.defaultCurrency select,
+.newCurrency select,
+.end input { 
+  font-size: 2rem;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.ebr{
+    text-align: center;
+    position: absolute;
+    bottom:1rem;
+    left:50%;
+    font-size: 2rem;
+}
+
+@media (max-width:2000px) {
+    .amount input,
+    .defaultCurrency select,
+    .newCurrency select,
+    .end input { 
+      font-size: 1rem;
+      line-height:1.5rem;
+      border-radius: 0.5rem;
+      margin: 1rem;
+    }
+
+    .mainArea {
+        
+        padding: 2rem 5rem;
+        margin: 10px;
+        border-radius: 2rem;
+      }
+      
+    
+.title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 0.3rem solid gray;
+    display: inline-flex;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@media (max-width:950px) {
+    .amount input,
+    .defaultCurrency select,
+    .newCurrency select,
+    .end input { 
+      font-size: 1rem;
+      line-height:0.5rem;
+      border-radius: 0.5rem;
+      margin: .5rem;
+    }
+
+    .mainArea {        
+        padding: 1rem 3rem;
+        margin: 10px;
+        border-radius: 2rem;
+      }
+      
+    
+.title {
+    margin: .8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 0.3rem solid gray;
+    display: inline-flex;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
